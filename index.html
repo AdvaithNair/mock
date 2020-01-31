@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MockSite</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <link rel="icon" type="image/png" href="assets/images/AdvaithLogo.png" />
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  
+  <body>
+
+    <!-- Header -->
+    <div id = "header">
+      <h1 class = "text-center" id = "top"><b>Mocking Text</b></h1>
+      <p class = "text-center" id = "top2">Generator</p>
+    </div>
+    <div id = "line"></div>
+
+    <!-- Input -->
+    <div id = "block">
+      <h2 class = "text-center" id = "input">INPUT</h2>
+      <p class = "text-center" id = "write">write mocked text here</p>
+      <div id = "fix"><textarea id="Text1" cols="40" rows="5"></textarea></div>
+      <div id = "fix">
+        <button id = "sub" class = "btn" onclick = "mockAll()">Submit</button>
+        <div id = "space"></div>
+        <button id = "ci" class = "btn" onclick = "clearText('Text1')">Clear Input</button>
+      </div>
+    </div>
+
+    <!-- Output -->
+    <div id = "block">
+      <h2 class = "text-center" id = "output">OUTPUT</h2>
+      <p class = "text-center" id = "get">get mocked text here</p>
+      <div id = "fix"><textarea id="Text2" cols="40" rows="5" disabled></textarea></div>
+      <div id = "fix">
+        <button id = "co" class = "btn" onclick = "clearText('Text2')">Clear Output</button>
+        <div id = "space"></div>
+        <button id = "cb" class = "btn" onclick = "clearBoth()">Clear Both</button>
+      </div>
+    </div>
+
+    <div id = "footer">
+      <a href = "https://advaithnair.com"><p class = "text-center" id = "top">&copy; ADVAITH NAIR 2020</p></a>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src = "assets/js/main.js"></script>
+  </body>
+</html>
